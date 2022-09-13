@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/*
+body
+*/
+body{
+    font-family: 'Noto Sans JP',"Helvetica Neue","Arial","Hiragino Kaku GothicProN","Hiragino Sans","Meiryo",sans-serif;;
+    font-size: 15px;
+    line-height: 1.5;/*行間*/
+    color: #333;
+    min-width: 200px;/*PC用では1024px*/
+}
+.wrap {
+	overflow: hidden;
+}/*共通*/
+
+/*
+section
+*/
+.seciton{
+    padding: 15px 30px;
+}/*共通*/
+
+
+/*
+slider
+*/
+.slider{
+    width: 100%;
+    padding: 0;
+    line-height: 0;
+    margin: 0px;
+    z-index: 0;
+}/*共通*/
+.slider_section{
+    position: relative;
+}/*共通*/
+.slider img{
+    width: 100vw;
+    height: auto;
+    /*
+        max-height:;
+        min-height:;
+    */
+    display: inline-block;
+    vertical-align: top;
+}
+.backline{
+    width: 100%;
+    height: 30%;
+    background-color: #eee;
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}/*共通*/
+.logomark{
+    width: 50%;/*PC用は400px*/
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.logomark img{
+    width: 100%;
+    height: 100%;
+}/*共通*/
+
+/*
+overview
+*/
+.overview{
+    margin: 0;
+}
+.overview_title{
+    text-align: center;/*中央寄せ*/
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 20px;/*margine top leftright buttom*/
+}/*共通*/
+.overview_subtitle{
+    margin: 20px 20px 0 20px;
+    font-size: 20px;/*PC用は30px*/
+}
+.overview_caption{
+    padding-left: 15px;
+    padding-top: 0px;/*30px*/
+    margin-right: 10px;
+}
+.image_of_overview{
+    right: 0;
+    width: 100%;
+    max-width: 600px;
+}/*共通*/
+
+
+/*
+使いまわせるgrid（同系要素複数横並び）
+*/
+/*.grid{
+    display: flex;
+}*/
+.grid_item{
+    margin: 0;
+    padding: 0;
+    list-style: none;/*リストに付く数字を無効化*/
+    align-items: center;
+    justify-content: center;
+}
+.gird-clo-2 > .grid_item{
+    width: 100%;/*50%*/
+}
+.gird-clo-3 > .grid_item{
+    width: 100%;/*50%*/
+}
+.gird-clo-4 >.grid_item{
+    width: 100%;/*50%*/
+}
+
+
+/*
+goto_show_page
+*/
+.showpage_section{
+    background-color: rgb(182, 182, 182);
+}/*共通*/
+.showpage_title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 20px;
+}/*共通*/
+
+
+/*
+article
+*/
+.card_position{
+    justify-content:center;
+}/*共通*/
+.card{
+    padding: 0 10px;
+}/*共通*/
+.card_link{
+    display: block;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.25s;/*対象の属性が変化する時0.25秒かけて変化する*/
+}/*共通*/
+.card_link:hover{
+    background-color: #eee;
+}/*カーソルが乗った時の挙動*/
+.card_image{
+    width: 100%;
+    height: auto;
+}
+.card_name{
+    margin:0;
+}
+.card_discription{
+    margin: 0;
+}
+
+
+/*
+credit
+*/
+.credit{
+    position:relative;
+    width: 100%;
+    height: 100px;
+}/*共通*/
+.credit_line{
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    position:absolute;
+    z-index: 1;
+}/*共通*/
+.credit_sentence{
+    color: #eee;
+    position: absolute;
+    margin: 10px 10px;
+    z-index: 10;
+    background-color: #333;
+}/*共通*/
+.credit_division_line{
+    width: 94%;
+    height: 2%;
+    left: 3%;
+    background-color: #555;
+    position: absolute;
+    z-index: 2;
+}/*共通*/
+
+/*
+未対応端末
+iPad Air         820:1180
+iPad Mini        768:1024
+Surface Pro 7    912:1368
+Surface Pro Duo  540:720
+Galaxy Fold      280:653
+
+区切りは420
+*/
