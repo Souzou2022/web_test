@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*display:none;*/
+    /*outline: 2px red solid;*/
+}
+
+/*
+base
+*/
+body{
+    font-family: 'Noto Sans JP',"Helvetica Neue","Arial","Hiragino Kaku GothicProN","Hiragino Sans","Meiryo",sans-serif;;
+    font-size: 15px;
+    line-height: 1.5;/*行間*/
+    color: #333;
+    min-width: 1024px;
+
+    background-color: #333;
+}
+.wrap {
+	overflow: hidden;
+}
+
+
+/*
+section
+*/
+.section{
+    padding: 0 0;
+}
+
+
+/*
+header
+*/
+header{
+    position :relative;
+}
+.headline{
+    height: 50px;
+    width: 100%;
+    top: 0px;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+}
+header a{
+    color: aqua;
+    position: absolute;
+    font-size: 35px;
+    top: 3px;
+    left: 10px;
+    text-decoration-line: none;
+    z-index: 11;
+}
+
+
+.head_image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/*
+logomark
+*/
+.logo_position{
+    position: relative;
+}
+.backline{
+    width: 100%;
+    height: 140px;
+    background-color: #eee;
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logomark{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+/*
+grid
+*/
+.grid{
+    display: flex;
+}
+.grid_item{
+    margin: 20px;
+    padding: 20px;
+    list-style: none;/*リストに付く数字を無効化*/
+    align-items: center;
+    justify-content: center;
+}
+.gird-clo-2 > .grid_item{
+    width: 500px;
+    height: 500px;
+}
+
+/*
+picture_propaty
+*/
+.download_button{
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    right: 25px;
+    bottom: 185px;
+    z-index: 5;
+}
+.cards1{
+    width: 500px;
+    height: 500px;
+    position:relative;
+}
+.cards2{
+    width: 500px;
+    height: 500px;
+    position:relative;
+}
+.card_plate{
+    background-color: #eee;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 0;
+}
+.cards1 > .picture_body{
+    width: 460px;
+    height: 270px;
+    position:absolute;
+    z-index: 1;
+    top: 50px;
+    left: 20px;
+}
+.cards2 > .picture_body{
+    width: 460px;
+    height: 270px;
+    position:absolute;
+    z-index: 1;
+    top: 50px;
+    left: 20px;
+}
+.card_position{
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+map
+*/
+.map_plate{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    background-color: #222;
+    position: fixed;
+    z-index: 10;
+}
+.map_plate_back{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(48,48,48);
+    position: fixed;
+    z-index: 9;
+    opacity: 60%;
+}
+.map_plate_img{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    width: auto;
+    position:fixed;
+    z-index: 12;
+}
+
+/*
+page submit
+*/
+.submit_position{
+    align-items: center;
+    justify-content: center;
+}
+.submit_card{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #eee;/* ←上下で合計20pxのボーダー */
+    background-color: #333;
+    color: #eee;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;/* ←円の高さ50px - 上下のボーダー20px */
+}

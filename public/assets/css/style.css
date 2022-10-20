@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/*
+*{
+    outline: 2px red solid;
+}
+要素の縁取り
+*/
+
+/*
+base style
+*/
+body{
+    font-family: 'Noto Sans JP',"Helvetica Neue","Arial","Hiragino Kaku GothicProN","Hiragino Sans","Meiryo",sans-serif;;
+    font-size: 15px;
+    line-height: 1.5;/*行間*/
+    color: #333;
+    min-width: 1024px;
+}
+
+
+.wrap {
+	overflow: hidden;
+}
+
+
+/*
+section
+*/
+.section{
+    padding: 15px 30px;
+}
+
+
+/*
+open_motion
+*/
+.line{
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    z-index: 20;
+}
+.up{
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    position:fixed;
+    z-index: 20;
+}/*上の枠*/
+.down{
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    position:fixed;
+    z-index: 20;
+    bottom:0;
+}/*下の枠*/
+
+
+/*
+overview
+*/
+.overview{
+    text-align: center;
+    margin:0;
+    display: flex;/*横並び*/
+    justify-content: center;/*display flex時の中央寄せ*/
+}
+.overview_title{
+    text-align: center;/*中央寄せ*/
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 20px;/*margine top leftright buttom*/
+}
+.overview_caption{
+    padding-left: 15px;
+    padding-top: 30px;
+    margin-right: 10px;
+}
+.overview_subtitle{
+    margin: 20px 20px 0 20px;
+    font-size: 30px;
+}
+.image_of_overview{
+    right: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/*
+使いまわせるgrid（同系要素複数横並び）
+*/
+.grid{
+    display: flex;
+}
+.grid_item{
+    margin: 0;
+    padding: 0;
+    list-style: none;/*リストに付く数字を無効化*/
+    align-items: center;
+    justify-content: center;
+}
+.gird-clo-1 > .grid_item{
+    width: 100%;
+}
+.gird-clo-2 > .grid_item{
+    width: 50%;
+}
+.gird-clo-3 > .grid_item{
+    width: 33.3%;
+}
+.gird-clo-4 >.grid_item{
+    width: 25%;
+}
+
+
+
+.showpage_section{
+    background-color: rgb(182, 182, 182);
+}
+.showpage_title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 20px;
+}
+
+
+/*
+article
+*/
+.card_position{
+    justify-content:center;
+}
+.card{
+    padding: 0 10px;
+}
+.card_link{
+    display: block;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.25s;/*対象の属性が変化する時0.25秒かけて変化する*/
+}
+.card_link:hover{
+    background-color: #eee;
+}/*カーソルが乗った時の挙動*/
+.card_image{
+    width: 800px;
+    height: auto;
+}
+.card_name{
+    margin:0;
+}
+.card_discription{
+    margin: 0;
+}
+
+
+/*
+.slider_section{
+}*/ 
+.slider_section{
+    position: relative;
+}
+.backline{
+    width: 100%;
+    height: 30%;
+    background-color: #eee;
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logomark{
+    width: 400px;/*スマホ版は50%*/
+    height: auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.logomark img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+slider system
+*/
+.slider {
+    width: 100%;
+    padding: 0;
+    line-height: 0;
+    margin: 0px;
+    z-index: 0;
+}
+.slider img{
+    width: 100vw;
+    height: 50vw;
+    max-height: 550px;
+    min-height: 500px;
+    display: inline-block;
+    vertical-align:top;
+}
+.slider .slick-slide {
+    margin:0;
+    /*marginステータスは画像同士の隙間*/
+}
+
+
+/*
+credit section
+*/
+.credit{
+    position:relative;
+    width: 100%;
+    height: 100px;
+}
+.credit_line{
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    position:absolute;
+    z-index: 1;
+}
+.credit_sentence{
+    color: #eee;
+    position: absolute;
+    margin: 10px 10px;
+    z-index: 10;
+    background-color: #333;
+}
+.credit_division_line{
+    width: 94%;
+    height: 2%;
+    left: 3%;
+    background-color: #555;
+    position: absolute;
+    z-index: 2;
+}

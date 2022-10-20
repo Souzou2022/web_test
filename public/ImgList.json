@@ -1,0 +1,11 @@
+{
+    "pictures":[
+        {"photographer":"パンダさん","img":"img3_1.jpg"},
+        {"photographer":"おじいちゃん","img":"sample.jpg"},
+        {"photographer":"パンダさん","img":"10101.png"},
+        {"photographer":"パンダさん","img":"20202.png"}
+    ],
+    "dodat":{
+        "data":"nrp_g"
+    }
+}
