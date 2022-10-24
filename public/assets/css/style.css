@@ -88,6 +88,7 @@ overview
     right: 0;
     width: 100%;
     max-width: 600px;
+    height: width*4/6;
 }
 
 
@@ -154,7 +155,7 @@ article
     height: auto;
 }
 .card_name{
-    margin:0;
+    margin:20px 0 0 0;
 }
 .card_discription{
     margin: 0;
